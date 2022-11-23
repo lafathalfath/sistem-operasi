@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- title -->
+        <title>My Personal Web Project</title>
+        <!-- favicon -->
+        <link rel="icon" href="assets/img/favIcon/favicon.png">
+        <!-- google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <!-- general style css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+        <!-- vendor css and bootstrap -->
+        <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+        <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+        <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+        <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+        <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <!-- header script -->
+        <script>
+          fetch("header.html").then(x => x.text()).then(x => document.querySelector("header-include").innerHTML = x)
+          fetch("footer.html").then(y => y.text()).then(y => document.querySelector("footer-include").innerHTML = y)
+        </script>
+    </head>
+    <body>
+      <header-include></header-include>
+      <main>
+        <!-- section 1 -->
+        <section class="container">
+          <div class="row row-cols-6">
+            <div class="col-lg-2">
+              <div class="card" id="carsec1">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section overflow -->
+        <section class="container">
+          <div class="container">
+            <div class="row overflow" id="section-overflowX">
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+              <div class="card" style="width: 200px; height: 200px; margin: 10px; background-color: bisque;"></div>
+            </div>
+          </div>
+        </section>
+        <!-- end section overflow -->
+
+        
+      </main>
+      <footer-include></footer-include>
+    </body>
+    <style>
+      #carsec1 {
+        background-color: #fcdf03;
+      }
+      #section-overflowX {
+        overflow: auto;
+      }
+    </style>
+</html>
